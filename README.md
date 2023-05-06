@@ -16,5 +16,5 @@ Link: https://github.com/avnshsingh/bhumio/tree/backend
 
 **Frontend:** React, Axios, React-icons
 
-**Frontend:** Nest.js
+**Backend:** Nest.js
 
