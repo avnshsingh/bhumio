@@ -1,38 +1,166 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  /* background-color: aqua; */
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20%;
+}
+
+.cardOuter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.card {
+  border: 1px solid rgb(229, 219, 219);
+  box-shadow: 0 0 4px rgb(189, 181, 181);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 5px;
+  width: 160px;
+  cursor: pointer;
+}
+
+.card p {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.searchInputContainer {
+  border: 1px solid rgb(229, 219, 219);
+  box-shadow: 0 0 4px rgb(189, 181, 181);
+  width: 60%;
+  display: flex;
+  padding: 10px 15px;
+  gap: 15px;
+  border-radius: 5px;
+  margin-top: 3%;
+}
+
+.searchInputContainer input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  width: 100%;
+}
+
+.searchInputContainer input::placeholder {
+  opacity: 0.5;
+}
+
+/* TOPIC LIST */
+
+.topic {
+  border: 2px solid rgb(229, 219, 219);
+  border-radius: 2px;
+}
+.topicInner {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.subTopic {
+  background-color: aqua;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.subTopic:hover {
+  background-color: rgb(125, 112, 177);
+  cursor: pointer;
+}
+
+/* Detailed Card */
+
+.cardWrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 10%;
+}
+
+.cardContainer {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.infoContainer {
+  border: 1px solid rgb(180, 164, 164);
+  box-shadow: 0 0 2px rgb(189, 181, 181);
+  border-radius: 10px;
+  height: 80vh;
+  padding: 10px 20px;
+  width: 150vw;
+}
+
+.subTopicContainer {
+  width: 100%;
+  cursor: pointer;
+}
+
+.infoContainer h3 {
+  margin-bottom: 15px;
+}
+.infoContainer p {
+  margin-bottom: 15px;
+}
+
+.iconSubTopic {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.breadcrumbs {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* 404 */
+
+.notFound {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
